@@ -1,0 +1,19 @@
+header {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10vh;
+}
+
+.menu {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+#testAdd {
+    position: fixed;
+    bottom: 5vh;
+    left: 1vw;
+}

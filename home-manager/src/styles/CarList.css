@@ -1,0 +1,151 @@
+#back {
+    margin-bottom: 10vh;
+    text-decoration: none;
+}
+
+.vehicle-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    justify-items: center;
+}
+
+.vehicle-list button {
+    width: 25vw;
+}
+
+.vehicle-card button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    min-height: 120px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.vehicle-card button:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #1a1a1a;
+}
+
+.vehicle-card button:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+.vehicle-image {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.vehicle-card button:hover .vehicle-image {
+    transform: scale(1.1);
+}
+
+.vehicle-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.vehicle-card button:hover .vehicle-text {
+    color: #646cff;
+}
+
+#addCarButton {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffd900;
+    color: black;
+    z-index: 1100;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+#addCarButton:hover {
+    background-color: rgba(255, 217, 0, 0.85);
+    outline: none;
+}
+
+form input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #ffd900;
+    color: black;
+}
+
+form button:hover {
+    background-color: rgba(255, 217, 0, 0.85);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form-modal {
+    position: fixed;
+    bottom: 25vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    max-width: 400px;
+    padding: 2rem 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+    z-index: 1100;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.form-modal form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-modal input,
+.form-modal button {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-modal.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
