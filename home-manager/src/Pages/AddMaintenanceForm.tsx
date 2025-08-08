@@ -1,7 +1,7 @@
 // Example usage in a React component
 import React, { useState } from "react";
 import { addMaintenance, getCurrentDateString } from "../firebase";
-import type { Maintenance } from "../types/maintenance";
+import type { Maintenance } from "../types/Maintenance";
 
 interface AddMaintenanceFormProps {
     vehicleId: string;

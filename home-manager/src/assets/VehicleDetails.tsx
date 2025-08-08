@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import type { Vehicle } from '../types/Vehicle';
-import type { Maintenance } from '../types/maintenance';
+import type { Maintenance } from '../types/Maintenance';
 import "../styles/VehicleDetails.css"
 import { updateVehicle, deleteVehicle, getMaintenanceForVehicle, testFirebaseConnection, getAllMaintenanceRecords, addMaintenance, getCurrentDateString } from "../firebase";
 import AddMaintenanceForm from "../Pages/AddMaintenanceForm";

@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs, addDoc, updateDoc, deleteDoc, doc, query, where } from "firebase/firestore";
 import type { Vehicle } from "./types/Vehicle";
-import type { Maintenance } from "./types/maintenance";
+import type { Maintenance } from "./types/Maintenance";
 
 const firebaseConfig = {
     apiKey: "AIzaSyBiniIS4WNM0CJJatMoWZ1Vb1Y-A6a-J4Y",
