@@ -20,9 +20,9 @@
 .menu {
     justify-items: center;
     display: grid;
-    
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
+    max-width: 100vw;
 }
 
 .menu button {
