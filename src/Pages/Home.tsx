@@ -16,7 +16,7 @@ function Home() {
       </header>
       <div id="menu" className="menu">
         <button onClick={toCars} className="card">
-            Cars
+            Vehicles
         </button>
         <button className="card">
           
