@@ -2,13 +2,66 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/home-manager/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-    <script type="module" crossorigin src="/home-manager/assets/index-CVLEyL_c.js"></script>
+    <title>Home Manager - Vehicle Maintenance Tracker</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .loading-container {
+        text-align: center;
+        max-width: 600px;
+      }
+      .loading-title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+      .loading-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+      }
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        border-top: 4px solid white;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 2rem;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .loading-text {
+        font-size: 1rem;
+        opacity: 0.8;
+      }
+    </style>
+    <script type="module" crossorigin src="/home-manager/assets/index-C9prpBbg.js"></script>
     <link rel="stylesheet" crossorigin href="/home-manager/assets/index-Bq25FcQW.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="loading-container">
+        <h1 class="loading-title">Home Manager</h1>
+        <p class="loading-subtitle">Vehicle Maintenance Tracker</p>
+        <div class="loading-spinner"></div>
+        <p class="loading-text">Loading your vehicle management app...</p>
+      </div>
+    </div>
+    
+    <!-- React app will replace the content above when loaded -->
   </body>
 </html>
