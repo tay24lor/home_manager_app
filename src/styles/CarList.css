@@ -1,17 +1,55 @@
-#back {
-    margin-bottom: 10vh;
-    text-decoration: none;
+#list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    margin: 0 0 10vh 0;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 2px 0 2px 2px;
+    height: 49.5px;
+}
+
+#list-header h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#home-button {
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+    z-index: 1;
+}
+
+#home-button:hover {
+    background-color: #383838;
 }
 
 .vehicle-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
+    height: 80vh;
     justify-items: center;
+    margin: 0 10px 0 10px;
 }
 
 .vehicle-list button {
     width: 25vw;
+    margin-top: 15px;
 }
 
 .vehicle-card button {

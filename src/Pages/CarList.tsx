@@ -60,9 +60,13 @@ const Carlist: React.FC<CarlistProps> = ({ vehicles, onAddVehicle }) => {
 
     return (
         <>
-            <button id='back' onClick={goHome}>
-                Home
-            </button>
+            <header id='list-header'>
+                <button id='home-button' onClick={goHome}>
+                    Home
+                </button>
+                <h1>Vehicles</h1>
+            </header>
+            
             
             <div className="vehicle-list">
                 {vehicles.map(vehicle => (

@@ -19,9 +19,9 @@ const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle }) => {
 
     const getVehicleImage = () => {
         if (isCorolla) {
-            return "/corolla.jpg";
+            return "./corolla.jpg";
         } else if (isGX) {
-            return "/gx.jpg";
+            return "./gx.jpg";
         }
         return null;
     };
