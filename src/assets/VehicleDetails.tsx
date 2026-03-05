@@ -197,7 +197,7 @@ const VehicleDetails: React.FC<VehicleDetailsProps> = ({ vehicles, onUpdateVehic
     }
 
     return (
-        <div>
+        <div className="vehicle-details-card">
             <div className="menubar">
                 <button onClick={goBack}>Back</button>
                 <button

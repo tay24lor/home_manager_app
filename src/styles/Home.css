@@ -31,6 +31,9 @@
     height: calc(min-width + 25px);
     text-align: center;
 }
+.menu button:hover {
+    background-color: #d6d6d6;
+}
 
 #testAdd {
     position: fixed;

@@ -9,6 +9,10 @@ function Home() {
         navigate(`/Carlist`);
     }
 
+    function toFuseBox() {
+        navigate(` /FuseBox`);
+    }
+
   return (
     <>
       <header id='home-header'>
@@ -17,6 +21,9 @@ function Home() {
       <div id="menu" className="menu">
         <button onClick={toCars} className="card">
             Vehicles
+        </button>
+        <button onClick={toFuseBox} className="card">
+            Breaker Panel
         </button>
         <button className="card">
           
